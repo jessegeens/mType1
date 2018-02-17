@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:selectable="false"
+        android:enabled="true"
+        android:key="example_key"
+        android:title="Ontwikkelaar"
+        android:summary="Ontwikkeld door Jesse Geens (2017)
+        \nInfo/bugs: jesse.geens@gmail.com
+        \nGebruiken op eigen risico!
+        \n\nSpecial thanks to Google for the Scholarship &lt;3" />
+</PreferenceScreen>

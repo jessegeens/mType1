@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="be.jssgns.mtype1.MainActivity">
+
+    <Button
+        android:text="Bloedsuikerwaarden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnBolus"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="loadBolus" />
+
+    <Button
+        android:text="Koolhydraten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKoolhydraten"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_below="@+id/btnBolus"
+        android:layout_alignParentEnd="true"
+        android:onClick="loadKh" />
+
+    <Button
+        android:text="Statistieken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStat"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_below="@+id/btnKoolhydraten"
+        android:layout_alignParentStart="true"
+        android:onClick="loadStatistieken" />
+
+    <Button
+        android:text="Verslag sturen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReport"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="sendReport"
+        android:layout_below="@+id/btnStat"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Instellingen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSettings"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="loadSettings"
+        android:layout_below="@+id/btnReport"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
